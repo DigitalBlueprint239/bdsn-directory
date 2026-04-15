@@ -1,0 +1,58 @@
+import { Category } from "@/types/listing";
+
+export const categories: Category[] = [
+{
+    name: "Trainers & Coaches",
+          slug: "trainers",
+          description: "Find top-rated sports trainers and private coaches in your area.",
+          icon: "Dumbbell",
+          count: 24,
+          seoTitle: "Sports Trainers & Coaches Directory | BDSN",
+          seoDescription: "Discover top youth sports trainers and athletic development programs.",
+      },
+{
+    name: "7v7 Teams & Programs",
+          slug: "7v7-teams",
+          description: "Discover 7-on-7 football teams and competitive programs.",
+          icon: "Users",
+          count: 18,
+          seoTitle: "7v7 Football Teams & Programs | BDSN Directory",
+          seoDescription: "Find 7-on-7 football teams and programs for youth athletes.",
+      },
+{
+    name: "Flag Football",
+          slug: "flag-football",
+          description: "Explore flag football leagues and tournaments for all age groups.",
+          icon: "Flag",
+          count: 15,
+          seoTitle: "Flag Football Leagues & Programs | BDSN Directory",
+          seoDescription: "Discover flag football leagues and youth programs near you.",
+      },
+{
+    name: "Recruiting Events",
+          slug: "recruiting-events",
+          description: "Find college recruiting events, camps, and combines.",
+          icon: "Calendar",
+          count: 21,
+          seoTitle: "College Recruiting Events & Camps | BDSN Directory",
+          seoDescription: "Browse recruiting events and showcase camps for athletes.",
+      },
+{
+    name: "Showcases",
+          slug: "showcases",
+          description: "Browse athletic showcases and exposure events.",
+          icon: "Trophy",
+          count: 12,
+          seoTitle: "Athletic Showcases & Exposure Events | BDSN Directory",
+          seoDescription: "Find athletic showcases and exposure events for athletes.",
+      },
+{
+    name: "NIL Resources",
+          slug: "nil-resources",
+          description: "Explore NIL education, agencies, and branding services.",
+          icon: "DollarSign",
+          count: 9,
+          seoTitle: "NIL Resources & Services for Athletes | BDSN Directory",
+          seoDescription: "Navigate NIL with education and compliance resources.",
+      },
+];
