@@ -27,7 +27,7 @@ export default function CategoryCard({ category }: CategoryCardProps) {
 
   return (
     <a
-      href={`/category/${category.slug}`}
+      href={`/directory/${category.slug}`}
       className="group flex flex-col items-start rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition hover:shadow-md hover:border-brand-gold/40"
     >
       <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-navy/10 text-brand-navy transition group-hover:bg-brand-gold group-hover:text-white">

@@ -38,7 +38,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.directory.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-gray-400 transition-colors hover:text-white">{link.label}</Link>
+                  <Link href={link.href} className="text-sm text-gray-400 transition-colors hover:text-white">
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -48,7 +50,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.regions.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-gray-400 transition-colors hover:text-white">{link.label}</Link>
+                  <Link href={link.href} className="text-sm text-gray-400 transition-colors hover:text-white">
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -58,7 +62,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-gray-400 transition-colors hover:text-white">{link.label}</Link>
+                  <Link href={link.href} className="text-sm text-gray-400 transition-colors hover:text-white">
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -14,7 +14,7 @@ export default function CTASection() {
   };
 
   return (
-    <section className="section-padding bg-brand-navy">
+    <section id="waitlist" className="section-padding bg-brand-navy">
       <div className="container-main text-center">
         <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
           Stay in the Loop

@@ -1,9 +1,17 @@
+import type { Metadata } from "next";
 import HeroSection from "@/components/HeroSection";
 import SectionHeading from "@/components/SectionHeading";
 import CategoryCard from "@/components/CategoryCard";
 import CTASection from "@/components/CTASection";
 import { categories } from "@/data/categories";
 import { Shield, TrendingUp, MapPin, Star } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description:
+    "Find youth sports trainers, 7v7 teams, flag football leagues, recruiting events, showcases, and NIL resources.",
+  alternates: { canonical: "/" },
+};
 
 const valueProps = [
   {
@@ -31,10 +39,8 @@ const valueProps = [
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
       <HeroSection />
 
-      {/* Category Grid */}
       <section className="section-padding bg-white">
         <div className="container-main">
           <SectionHeading
@@ -49,7 +55,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why BDSN */}
       <section className="section-padding bg-brand-light">
         <div className="container-main">
           <SectionHeading
@@ -70,13 +75,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Sponsor Placeholder */}
       <section className="section-padding bg-white">
         <div className="container-main">
-          <SectionHeading
-            title="Our Partners"
-            subtitle="Trusted by leading organizations in youth sports."
-          />
+          <SectionHeading title="Our Partners" subtitle="Trusted by leading organizations in youth sports." />
           <div className="mt-10 flex flex-wrap items-center justify-center gap-8 opacity-40">
             {["Partner 1", "Partner 2", "Partner 3", "Partner 4", "Partner 5"].map((name) => (
               <div
@@ -88,12 +89,14 @@ export default function HomePage() {
             ))}
           </div>
           <p className="mt-6 text-center text-sm text-gray-400">
-            Interested in sponsoring? <a href="/advertise" className="font-medium text-brand-accent underline">Learn more</a>
+            Interested in sponsoring?{" "}
+            <a href="/advertise" className="font-medium text-brand-accent underline">
+              Learn more
+            </a>
           </p>
         </div>
       </section>
 
-      {/* CTA / Waitlist */}
       <CTASection />
     </>
   );
